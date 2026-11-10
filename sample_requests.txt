@@ -1,0 +1,378 @@
+Sample Request 1 — Chest Pain / Possible Cardiac Presentation
+{
+  "patient_id": "PAT-10001",
+  "symptoms": {
+    "chief_complaint": "Chest pain",
+    "onset": "2 hours ago",
+    "duration": "2 hours",
+    "severity": 7,
+    "location": "Substernal",
+    "character": "Pressure",
+    "radiation": "Left arm",
+    "aggravating_factors": [
+      "Exertion"
+    ],
+    "relieving_factors": [
+      "Rest"
+    ],
+    "associated_symptoms": [
+      "Shortness of breath",
+      "Diaphoresis",
+      "Nausea"
+    ]
+  },
+  "history": {
+    "age": 58,
+    "sex": "Male",
+    "medical_history": [
+      "Hypertension",
+      "Hyperlipidemia"
+    ],
+    "surgical_history": [],
+    "family_history": {
+      "coronary_artery_disease": true,
+      "father_mi_age": 54
+    },
+    "social_history": {
+      "smoking": "Former smoker",
+      "alcohol": "Occasional"
+    }
+  },
+  "vitals": {
+    "temperature_c": 36.8,
+    "heart_rate_bpm": 102,
+    "respiratory_rate_bpm": 22,
+    "blood_pressure_mmhg": {
+      "systolic": 158,
+      "diastolic": 94
+    },
+    "oxygen_saturation_percent": 94
+  },
+  "medications": [
+    {
+      "name": "Amlodipine",
+      "dose": "5 mg",
+      "route": "oral",
+      "frequency": "once daily"
+    },
+    {
+      "name": "Atorvastatin",
+      "dose": "20 mg",
+      "route": "oral",
+      "frequency": "once daily"
+    }
+  ],
+  "allergies": [
+    "Penicillin"
+  ],
+  "labs": [
+    {
+      "test_name": "Troponin I",
+      "value": 0.08,
+      "unit": "ng/mL",
+      "reference_range": "<0.04 ng/mL",
+      "collected_at": "2026-09-24T06:30:00"
+    },
+    {
+      "test_name": "Hemoglobin",
+      "value": 14.2,
+      "unit": "g/dL",
+      "reference_range": "13.0-17.0 g/dL"
+    },
+    {
+      "test_name": "Creatinine",
+      "value": 1.1,
+      "unit": "mg/dL",
+      "reference_range": "0.7-1.3 mg/dL"
+    },
+    {
+      "test_name": "Glucose",
+      "value": 146,
+      "unit": "mg/dL",
+      "reference_range": "70-140 mg/dL"
+    }
+  ],
+  "imaging": [
+    {
+      "modality": "ECG",
+      "body_region": "Heart",
+      "findings": "Sinus tachycardia with nonspecific ST-T wave abnormalities",
+      "impression": "Abnormal ECG requiring clinical correlation"
+    },
+    {
+      "modality": "Chest X-ray",
+      "body_region": "Chest",
+      "findings": "No focal consolidation or pleural effusion",
+      "impression": "No acute pulmonary abnormality"
+    }
+  ]
+}
+Sample Request 2 — Fever + Respiratory Symptoms
+{
+  "patient_id": "PAT-10002",
+  "symptoms": {
+    "chief_complaint": "Fever and cough",
+    "onset": "3 days ago",
+    "duration": "3 days",
+    "severity": 6,
+    "temperature_reported_c": 38.9,
+    "cough": "Productive",
+    "sputum": "Yellow-green",
+    "associated_symptoms": [
+      "Shortness of breath",
+      "Fatigue",
+      "Chills"
+    ]
+  },
+  "history": {
+    "age": 67,
+    "sex": "Female",
+    "medical_history": [
+      "Type 2 diabetes mellitus",
+      "COPD"
+    ],
+    "surgical_history": [],
+    "family_history": {},
+    "social_history": {
+      "smoking": "Former smoker"
+    }
+  },
+  "vitals": {
+    "temperature_c": 38.9,
+    "heart_rate_bpm": 110,
+    "respiratory_rate_bpm": 26,
+    "blood_pressure_mmhg": {
+      "systolic": 102,
+      "diastolic": 64
+    },
+    "oxygen_saturation_percent": 89
+  },
+  "medications": [
+    {
+      "name": "Metformin",
+      "dose": "500 mg",
+      "route": "oral",
+      "frequency": "twice daily"
+    },
+    {
+      "name": "Tiotropium",
+      "dose": "18 mcg",
+      "route": "inhaled",
+      "frequency": "once daily"
+    }
+  ],
+  "allergies": [
+    "Sulfonamide antibiotics"
+  ],
+  "labs": [
+    {
+      "test_name": "White Blood Cell Count",
+      "value": 17.8,
+      "unit": "10^9/L",
+      "reference_range": "4.0-11.0"
+    },
+    {
+      "test_name": "CRP",
+      "value": 126,
+      "unit": "mg/L",
+      "reference_range": "<5"
+    },
+    {
+      "test_name": "Creatinine",
+      "value": 1.4,
+      "unit": "mg/dL",
+      "reference_range": "0.6-1.1"
+    }
+  ],
+  "imaging": [
+    {
+      "modality": "Chest X-ray",
+      "body_region": "Chest",
+      "findings": "Right lower lobe air-space opacity",
+      "impression": "Right lower lobe consolidation"
+    }
+  ]
+}
+Sample Request 3 — Abdominal Pain
+{
+  "patient_id": "PAT-10003",
+  "symptoms": {
+    "chief_complaint": "Right lower abdominal pain",
+    "onset": "12 hours ago",
+    "duration": "12 hours",
+    "severity": 8,
+    "location": "Right lower quadrant",
+    "character": "Sharp",
+    "associated_symptoms": [
+      "Nausea",
+      "Loss of appetite"
+    ],
+    "negative_symptoms": [
+      "No chest pain",
+      "No shortness of breath"
+    ]
+  },
+  "history": {
+    "age": 29,
+    "sex": "Female",
+    "medical_history": [],
+    "surgical_history": [],
+    "family_history": {},
+    "social_history": {
+      "smoking": "Never",
+      "alcohol": "None"
+    }
+  },
+  "vitals": {
+    "temperature_c": 38.1,
+    "heart_rate_bpm": 105,
+    "respiratory_rate_bpm": 20,
+    "blood_pressure_mmhg": {
+      "systolic": 118,
+      "diastolic": 76
+    },
+    "oxygen_saturation_percent": 98
+  },
+  "medications": [],
+  "allergies": [],
+  "labs": [
+    {
+      "test_name": "White Blood Cell Count",
+      "value": 14.6,
+      "unit": "10^9/L",
+      "reference_range": "4.0-11.0"
+    },
+    {
+      "test_name": "CRP",
+      "value": 72,
+      "unit": "mg/L",
+      "reference_range": "<5"
+    },
+    {
+      "test_name": "Pregnancy Test",
+      "value": "Negative",
+      "unit": "qualitative"
+    }
+  ],
+  "imaging": [
+    {
+      "modality": "Ultrasound",
+      "body_region": "Abdomen",
+      "findings": "Noncompressible tubular structure in the right lower quadrant measuring 8 mm with surrounding inflammatory changes",
+      "impression": "Findings concerning for acute appendiceal inflammation"
+    }
+  ]
+}
+Sample Request 4 — Minimal / Incomplete Information
+
+This is particularly useful for testing your Missing Information Agent and Critic Agent.
+
+{
+  "patient_id": "PAT-10004",
+  "symptoms": {
+    "chief_complaint": "Headache",
+    "duration": "Unknown",
+    "severity": 7,
+    "associated_symptoms": [
+      "Nausea"
+    ]
+  },
+  "history": {
+    "age": 45
+  },
+  "vitals": {},
+  "medications": [],
+  "allergies": [],
+  "labs": [],
+  "imaging": []
+}
+
+Your workflow should not assume that missing vitals, neurological examination, medication history, or imaging means they are normal.
+
+The MissingInformationAgent should potentially identify things such as:
+
+Missing:
+- Blood pressure
+- Temperature
+- Neurological examination
+- Headache onset
+- Sudden vs gradual onset
+- History of trauma
+- Medication/substance use
+- Visual symptoms
+- Focal neurological symptoms
+Sample Request 5 — Diabetes Follow-up
+{
+  "patient_id": "PAT-10005",
+  "symptoms": {
+    "chief_complaint": "Increased thirst and frequent urination",
+    "duration": "2 weeks",
+    "severity": 5,
+    "associated_symptoms": [
+      "Fatigue",
+      "Blurred vision"
+    ]
+  },
+  "history": {
+    "age": 52,
+    "sex": "Male",
+    "medical_history": [
+      "Type 2 diabetes mellitus",
+      "Hypertension"
+    ],
+    "family_history": {
+      "diabetes": true
+    },
+    "social_history": {
+      "smoking": "Never"
+    }
+  },
+  "vitals": {
+    "temperature_c": 36.7,
+    "heart_rate_bpm": 88,
+    "respiratory_rate_bpm": 18,
+    "blood_pressure_mmhg": {
+      "systolic": 146,
+      "diastolic": 88
+    },
+    "oxygen_saturation_percent": 97
+  },
+  "medications": [
+    {
+      "name": "Metformin",
+      "dose": "1000 mg",
+      "route": "oral",
+      "frequency": "twice daily"
+    },
+    {
+      "name": "Losartan",
+      "dose": "50 mg",
+      "route": "oral",
+      "frequency": "once daily"
+    }
+  ],
+  "allergies": [
+    "No known drug allergies"
+  ],
+  "labs": [
+    {
+      "test_name": "HbA1c",
+      "value": 9.2,
+      "unit": "%",
+      "reference_range": "<5.7%"
+    },
+    {
+      "test_name": "Fasting Glucose",
+      "value": 218,
+      "unit": "mg/dL",
+      "reference_range": "70-99 mg/dL"
+    },
+    {
+      "test_name": "Creatinine",
+      "value": 1.0,
+      "unit": "mg/dL",
+      "reference_range": "0.7-1.3 mg/dL"
+    }
+  ],
+  "imaging": []
+}
